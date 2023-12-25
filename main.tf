@@ -2,7 +2,7 @@ resource "helm_release" "tailscale_operator" {
   name = "tailscale-operator"
 
   repository       = "https://pkgs.tailscale.com/helmcharts"
-  chart            = "tailscale/tailscale-operator"
+  chart            = "tailscale-operator"
   version          = "1.56.1"
   create_namespace = true
   namespace        = "tailscale-operator"
